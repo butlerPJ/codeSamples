@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DefuseTheBomb</string>
+
+    <string name="hello_world">hello world</string>
+    <string name="action_settings">Settings</string>
+    <string name="kablooey">KABLOOEY</string>
+    <string name="title_activity_difficulty"> </string>
+    <string name="title_activity_instructions"> </string>
+    <string name="title_activity_easy_game"> </string>
+    <string name="winner">Congratulations!!! You\'ve defused the bomb before detonation!!! Points awarded: </string>
+    <string name="start">Start</string>
+    <string name="reset">Reset</string>
+    <string name="scoreText">Score: </string>
+    <string name="medium">Medium difficulty is unavailable at this stage of
+        this early access game. In the meantime please enjoy the easy difficulty for now</string>
+    <string name="hard">Hard difficulty is unavailable at this stage of
+        this early access game. In the meantime please enjoy the easy difficulty.</string>
+    <string name="time_remaining">Time Remaining: </string>
+    <string name="time_reset">Time Remaining: 30</string>
+
+</resources>

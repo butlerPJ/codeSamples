@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.defusethebomb.EasyGame">
+
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#9e0b0f"
+        android:background="#999999"
+        android:textSize="25sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/timeRemaining"
+        android:layout_width="325dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#9e0b0f"
+        android:background="#070707"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_below="@+id/btnStart"
+        android:layout_centerHorizontal="true"
+         />
+
+    <ToggleButton
+        android:id="@+id/blueWire"
+        android:layout_width="25dp"
+        android:layout_height="90dp"
+        android:background="@drawable/check_blue"
+        android:textOff=""
+        android:textOn=""
+        android:layout_below="@+id/timeRemaining"
+        android:layout_toStartOf="@+id/redWire" />
+
+    <ToggleButton
+        android:id="@+id/redWire"
+        android:layout_width="25dp"
+        android:layout_height="90dp"
+        android:background="@drawable/check_red"
+        android:textOff=""
+        android:textOn=""
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/timeRemaining"
+        android:layout_centerHorizontal="true" />
+
+    <ToggleButton
+        android:id="@+id/greenWire"
+        android:layout_width="25dp"
+        android:layout_height="90dp"
+        android:background="@drawable/check_green"
+        android:textOff=""
+        android:textOn=""
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/timeRemaining"
+        android:layout_toEndOf="@id/redWire" />
+
+    <ImageView
+        android:id="@+id/tnt"
+        android:layout_width="225dp"
+        android:layout_height="75dp"
+        android:background="@drawable/tnt"
+        android:layout_below="@+id/blueWire"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/btnStart"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtScore"
+        android:layout_alignStart="@+id/timeRemaining"
+        android:background="@drawable/start" />
+
+    <ImageButton
+        android:id="@+id/btnReset"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/timeRemaining"
+        android:layout_below="@id/txtScore"
+        android:layout_alignRight="@id/timeRemaining"
+        android:background="@drawable/reset" />
+
+</RelativeLayout>

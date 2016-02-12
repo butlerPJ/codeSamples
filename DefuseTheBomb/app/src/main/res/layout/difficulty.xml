@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.defusethebomb.Difficulty">
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:id="@+id/difficultyHeader"
+        android:src="@drawable/defuse_the_bomb_header"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:color="#322f2f"
+        android:id="@+id/btnEasy"
+        android:background="@drawable/easy_button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:color="#322f2f"
+        android:id="@+id/btnMedium"
+        android:background="@drawable/medium_button"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/btnEasy"
+        android:layout_alignStart="@+id/btnEasy" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:color="#322f2f"
+        android:id="@+id/btnHard"
+        android:background="@drawable/hard_button"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/btnMedium"
+        android:layout_alignStart="@+id/btnMedium" />
+
+</RelativeLayout>
